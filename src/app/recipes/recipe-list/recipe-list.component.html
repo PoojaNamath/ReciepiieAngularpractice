@@ -1,5 +1,6 @@
 <div class="row">
     <div class="col-xs-12">
+        <br>
         <button class="btn btn-success">New Recipe</button>
         <hr>
     </div>
@@ -11,8 +12,9 @@
                 <h4 class="ist-group-item-heading">{{ recipe.name }}</h4>
                 <p class="list-group-item-text">{{ recipe.description }}</p>
             </div>
-            <span class="pull-right"></span>
-            <img [src]="recipe.imagePath" alt="{{ recipe.name }}" class="img-responsive" style="max-height:50px;">
+            <span class="pull-right">
+                <img [src]="recipe.imagePath" alt="{{ recipe.name }}" class="img-responsive" style="max-height:50px;">
+            </span>
         </a>
         <app-recipe-item></app-recipe-item>
     </div>
